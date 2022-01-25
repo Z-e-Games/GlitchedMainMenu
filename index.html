@@ -32,7 +32,7 @@
         <br>
         Mac OS: <a href='https://www.brighthub.com/computing/mac-platform/articles/59442/'>Link</a>
         <br>
-        <span style= 'color: white;' >LTM Mode(christmas special) </span><input type ="radio" id = 'LTM mode radio' name = 'Mode'><br>
+       
     </center>
     <a style="background-color: rgb(24, 24, 24);
     color: #fff; 
@@ -50,17 +50,8 @@
     text-decoration: none;" href =''>About/How to Play</a>
     
     <script>
-        const storyModeRadio = document.getElementById('story mode radio')
-        const endlessModeRadio = document.getElementById('endless mode radio')
-        const LTMModeRadio = document.getElementById('LTM mode radio')
         function checkForModeSwitch(){
-            if(storyModeRadio.checked === true){
-            localStorage.setItem('mode', 'story mode')
-            }else if(endlessModeRadio.checked === true){
-            localStorage.setItem('mode', 'endless mode')
-            }else if(LTMModeRadio.checked === true){
             localStorage.setItem('mode', 'LTM')
-            }
         }
     </script>
 </body>
